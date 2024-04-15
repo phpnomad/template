@@ -1,8 +1,8 @@
 {
-    "name": "phoenix/repository",
+    "name": "phpnomad/template",
     "description": "",
     "type": "library",
-    "homepage": "https://github.com/phoenix/core",
+    "homepage": "https://github.com/phpnomad/template",
     "readme": "README.md",
     "license": "MIT",
     "scripts": {
@@ -16,12 +16,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Phoenix\\Core\\": "lib/"
+            "PHPNomad\\Template\\": "lib/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Phoenix\\Core\\Tests\\": "tests/"
+            "PHPNomad\\Template\\Tests\\": "tests/"
         }
     },
     "authors": [
