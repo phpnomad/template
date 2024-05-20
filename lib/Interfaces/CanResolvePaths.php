@@ -8,5 +8,5 @@ interface CanResolvePaths
      * @param string $assetName
      * @return string
      */
-    public function getPath(string $assetName): string;
+    public function getPath(string $assetName = ''): string;
 }
