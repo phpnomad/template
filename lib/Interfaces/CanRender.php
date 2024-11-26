@@ -2,7 +2,7 @@
 
 namespace PHPNomad\Template\Interfaces;
 
-use PHPNomad\Template\Exceptions\TemplateNotFound;
+use PHPNomad\Template\Exceptions\TemplateException;
 
 interface CanRender {
     /**
@@ -11,7 +11,7 @@ interface CanRender {
      * @param string $templatePath Path to the template file.
      * @param array $data Associative array of data to be used in the template.
      * @return string Rendered output as a string.
-     * @throws TemplateNotFound
+     * @throws TemplateException
      */
     public function render(string $templatePath, array $data = []): string;
 }

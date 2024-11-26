@@ -4,6 +4,6 @@ namespace PHPNomad\Template\Exceptions;
 
 use Exception;
 
-class TemplateNotFound extends TemplateException
+class TemplateException extends Exception
 {
 }

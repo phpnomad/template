@@ -2,6 +2,7 @@
 
 namespace PHPNomad\Template\Services;
 
+use PHPNomad\Template\Exceptions\TemplateException;
 use PHPNomad\Template\Exceptions\TemplateNotFound;
 use PHPNomad\Template\Interfaces\CanRender;
 use PHPNomad\Template\Interfaces\CanResolvePaths;
@@ -21,7 +22,7 @@ class RenderService
      * @param $template
      * @param array $data
      * @return string
-     * @throws TemplateNotFound
+     * @throws TemplateException
      */
     public function render($template, array $data = []): string
     {
